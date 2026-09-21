@@ -3,9 +3,10 @@ name: Terraform Destroy
 on:
   workflow_dispatch:
     inputs:
-      description: 'Type "destroy" to confirm'
-      required: true
-      type: string
+      confirm:
+        description: 'Type "destroy" to confirm'
+        required: true
+        type: string
 
 concurrency:
   group: terraform-${{ github.ref }}
