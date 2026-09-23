@@ -31,7 +31,7 @@ jobs:
     environment: ${{ matrix.environment}}
     defaults:
       run:
-        working-directory: environment/${{ matrix.environment }}
+        working-directory: environments/${{ matrix.environment }}
     steps:
       - uses: actions/checkout@v4
 

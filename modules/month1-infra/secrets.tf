@@ -3,6 +3,7 @@
 # on a schedule in a real setup).
 resource "aws_secretsmanager_secret" "mongo_password" {
   name = "${var.environment}/parse-stack/mongo-root-password"
+  recovery_window_in_days = 0
 }
 
 resource "aws_secretsmanager_secret_version" "mongo_password" {
