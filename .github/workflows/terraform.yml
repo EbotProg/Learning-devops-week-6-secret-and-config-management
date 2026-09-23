@@ -123,4 +123,4 @@ jobs:
           path: environment/${{ matrix.environment }}
 
       - name: Apply
-        run: terraform apply -auto-approve tfplan-${{ matrix.environment}}
+        run: terraform apply -auto-approve tfplan
