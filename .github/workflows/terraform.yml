@@ -21,6 +21,8 @@ permissions:
 env:
   AWS_REGION: eu-north-1
   TF_VERSION: 1.11.0
+  BUCKET: ebotprog-terraform-state
+  DYNAMODB_TABLE: terraform-locks
 
 jobs:
   plan:
