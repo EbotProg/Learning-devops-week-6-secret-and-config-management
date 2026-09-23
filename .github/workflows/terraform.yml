@@ -3,10 +3,10 @@ name: Terraform
 on:
   pull_request:
     branches: [main]
-    paths: ["environments/**", "modules/**"]
+    paths: ["environments/**", "modules/**", ".github/workflows/**"]
   push:
     branches: [main]
-    paths: ["environments/**", "modules/**"]
+    paths: ["environments/**", "modules/**", ".github/workflows/**"]
   workflow_dispatch:
 
 concurrency:
