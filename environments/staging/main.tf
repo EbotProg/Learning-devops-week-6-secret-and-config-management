@@ -24,13 +24,13 @@ provider "aws" {
 module "infra" {
   source = "../../modules/month1-infra"
 
-  environment         = "staging"
-  region              = var.region
-  vpc_cidr            = var.vpc_cidr
-  instance_type       = var.instance_type
-  bastion_allowed_ip  = var.bastion_allowed_ip
-  key_name            = var.key_name
-  bucket_name         = var.bucket_name
+  environment        = "staging"
+  region             = var.region
+  vpc_cidr           = var.vpc_cidr
+  instance_type      = var.instance_type
+  bastion_allowed_ip = var.bastion_allowed_ip
+  key_name           = var.key_name
+  bucket_name        = var.bucket_name
 
   mongo_root_password = var.mongo_root_password
   parse_master_key    = var.parse_master_key
