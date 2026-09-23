@@ -80,7 +80,7 @@ jobs:
           TF_VAR_mongo_root_password: ${{ secrets.MONGO_ROOT_PASSWORD }}
           TF_VAR_parse_master_key: ${{ secrets.PARSE_MASTER_KEY }}
           TF_VAR_dashboard_password: ${{ secrets.DASHBOARD_PASSWORD }}
-          TF_VAR_bastion_allowed_ip: ${{ vars.TF_VAR_bastion_allowed_ip}}
+          TF_VAR_bastion_allowed_ip: ${{ vars.TF_VAR_BASTION_ALLOWED_IP}}
 
       - name: Upload Plan
         uses: actions/upload-artifact@v4
