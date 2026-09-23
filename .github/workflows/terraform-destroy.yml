@@ -23,7 +23,7 @@ env:
 jobs:
   destroy:
     name: Destroy
-    runs-on: ubuntu-release
+    runs-on: ubuntu-latest
     if: inputs.confirm == 'destroy'
     strategy:
       matrix:
